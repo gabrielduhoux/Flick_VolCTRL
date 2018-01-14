@@ -53,7 +53,7 @@ def main(stdscr):
             cardId = i
             break
         else:
-            card = 'bcm2835 ALSA'
+            card = 'ALSA'
             control = 'PCM'
             cardId = i
     try:
