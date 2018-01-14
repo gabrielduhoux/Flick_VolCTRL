@@ -46,14 +46,14 @@ def main(stdscr):
     stdscr.refresh()
 
     # Setup the mixer
-    cardId = 0
+    cardId = -1
     for i in range(len(alsaaudio.cards())):  # Find the JustBoom card
         if (alsaaudio.cards()[i] == 'sndrpiboomberry' or alsaaudio.cards()[i] == 'sndrpijustboomd'):
             card = 'JustBoom DAC'
             control = 'Digital'
             cardId = i
             break
-    if cardId == 0:                             # JustBoom card not found
+    if cardId == -1:                             # JustBoom card not found
         for i in range(len(alsaaudio.cards())):  # Find the default onboard ALSA card
             if (alsaaudio.cards()[i] == 'ALSA'):
                 card = 'ALSA'
