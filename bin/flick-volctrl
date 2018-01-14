@@ -71,7 +71,7 @@ def main(stdscr):
     datawin = curses.newwin(4, curses.COLS - 6, 4, 3
 
     # Fill firmware info window.
-    fwwin.erase()
+    # fwwin.erase()
     fwwin.border()
     fwwin.addstr(1, 2, 'Selected Audio Card: ' + str(card))
     fwwin.refresh()
