@@ -68,7 +68,7 @@ def main(stdscr):
         exit("Compatible audio card not found")
 
     fwwin = curses.newwin(3, curses.COLS - 6, 1, 3)
-    datawin = curses.newwin(4, curses.COLS - 6, 4, 3
+    datawin = curses.newwin(4, curses.COLS - 6, 4, 3)
 
     # Fill firmware info window.
     fwwin.erase()
