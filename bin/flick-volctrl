@@ -56,7 +56,7 @@ def main(stdscr):
     if cardId == -1:                             # JustBoom card not found
         for i in range(len(alsaaudio.cards())):  # Find the default onboard ALSA card
             if (alsaaudio.cards()[i] == 'ALSA'):
-                card = 'bcm2835 ALSA'
+                card = 'ALSA'
                 control = 'PCM'
                 cardId = i
                 break
